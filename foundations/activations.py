@@ -8,8 +8,7 @@ class Solution:
         # z is a 1D NumPy array
         # Formula: 1 / (1 + e^(-z))
         # return np.round(your_answer, 5)
-        denominator = 1 + (np.exp(-(z)))
-        sigmoid_result = 1 / denominator 
+        sigmoid_result = 1 / (1 + (np.exp(-(z)))) 
         return np.round(sigmoid_result, 5)
 
 
